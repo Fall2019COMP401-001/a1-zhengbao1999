@@ -66,6 +66,6 @@ public class A1Adept {
 		}
 		System.out.println("Biggest: " + biggest + " (" + String.format("%.2f", max) + ")" );
 		System.out.println("Smallest: " + smallest + " (" + String.format("%.2f", min) + ")");
-		System.out.println("Average: " + String.format("%.2f", grandTotal/3));
+		System.out.println("Average: " + String.format("%.2f", grandTotal/numCus));
 	}
 }
