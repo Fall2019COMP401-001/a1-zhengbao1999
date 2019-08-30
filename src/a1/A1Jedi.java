@@ -21,6 +21,7 @@ public class A1Jedi {
 		int numCus = scan.nextInt();
 		for(int i = numCus; i > 0; i --)
 		{
+			boolean[] isAdded = new boolean[6]; 
 			while(!scan.hasNextDouble())
 			{
 				scan.next();
@@ -35,8 +36,12 @@ public class A1Jedi {
 				{
 					if(item[index].equals(thing))
 					{
+						if(!isAdded[index])
+						{
+							cus[index] ++;
+							isAdded[index] = true;
+						}
 						itemBought[index] += n;
-						cus[index] ++;
 					}
 				}
 			}
