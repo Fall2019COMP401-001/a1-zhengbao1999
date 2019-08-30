@@ -21,7 +21,7 @@ public class A1Jedi {
 		int numCus = scan.nextInt();
 		for(int i = numCus; i > 0; i --)
 		{
-			boolean[] isAdded = new boolean[6]; 
+			boolean[] isAdded = new boolean[numItem]; 
 			while(!scan.hasNextDouble())
 			{
 				scan.next();
